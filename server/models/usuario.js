@@ -41,6 +41,8 @@ let usuarioSchema = new Schema({
 
 });
 
+// Eliminación del campo password de los resultados mostrados
+
 usuarioSchema.methods.toJSON = function() {
     let user = this;
     let userObject = user.toObject();
